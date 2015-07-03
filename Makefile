@@ -39,9 +39,9 @@ coverage:
 	open htmlcov/index.html
 
 docs:
-	rm -f docs/lfalvarez/django-interests-inspector.rst
+	rm -f docs/django-interests-inspector.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ lfalvarez/django-interests-inspector
+	sphinx-apidoc -o docs/ django-interests-inspector
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	open docs/_build/html/index.html

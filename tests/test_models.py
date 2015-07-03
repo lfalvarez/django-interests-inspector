@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 """
-test_lfalvarez/django-interests-inspector
+test_django-interests-inspector
 ------------
 
-Tests for `lfalvarez/django-interests-inspector` models module.
+Tests for `django-interests-inspector` models module.
 """
 
 import os

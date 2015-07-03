@@ -30,7 +30,7 @@ setup(
     long_description=readme + '\n\n' + history,
     author='Felipe Alvarez',
     author_email='falvarez@ciudadanoi.org',
-    url='https://github.com/lfalvarez/lfalvarez/django-interests-inspector',
+    url='https://github.com/lfalvarez/django-interests-inspector',
     packages=[
         'interests',
     ],
@@ -39,7 +39,7 @@ setup(
     ],
     license="BSD",
     zip_safe=False,
-    keywords='lfalvarez/django-interests-inspector',
+    keywords='django-interests-inspector',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Framework :: Django',
