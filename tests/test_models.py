@@ -22,7 +22,7 @@ class InterestsTestCase(TestCase):
 
     def test_instanciate(self):
         '''Instanciate interests'''
-        person = Person.objects.get(id='arturo-frei-bolivar')
+        person = Person.objects.get(id='hernan-larrain-fernandez')
         interest = Interest.objects.create(person=person,
                                            description=u"Una descripción",
                                            start_date="1/1/1990",
@@ -53,7 +53,7 @@ class ConflictInterestTestCase(TestCase):
         pass
 
     def test_instanciate(self):
-        person = Person.objects.get(id='arturo-frei-bolivar')
+        person = Person.objects.get(id='hernan-larrain-fernandez')
         interest = Interest.objects.create(person=person,
                                            description=u"Una descripción",
                                            start_date="1/1/1990",
