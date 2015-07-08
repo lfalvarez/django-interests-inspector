@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import sys
 
 try:
@@ -16,11 +17,24 @@ try:
             "django.contrib.auth",
             "django.contrib.contenttypes",
             "django.contrib.sites",
+            "popolo",
             "interests",
         ],
         SITE_ID=1,
         NOSE_ARGS=['-s'],
         MIDDLEWARE_CLASSES=(),
+        #LOGGING
+        LOGGING = {'version': 1,
+                   'disable_existing_loggers': True,
+                   'formatters': {'simple': {'format': '%(asctime)s %(levelname)s %(message)s'}},
+                   'handlers': {'console': {'level': 'DEBUG', 'class': 'logging.StreamHandler', 'formatter': 'simple'},
+                                'null': {'level': 'DEBUG',
+                                         'class': 'logging.NullHandler',
+                                         },
+                                },
+                   'loggers': {'django.db.backends': {'level': 'DEBUG', 'handlers': ['null'], 'propagate': False}}
+                   },
+        #END LOGGING
     )
 
     try:

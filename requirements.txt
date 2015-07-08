@@ -1,3 +1,5 @@
 django>=1.5.1
 wheel==0.24.0
 # Additional requirements go here
+-e git+https://github.com/openpolis/django-popolo.git#egg=django_popolo-dev
+django-autoslug==1.8.0
